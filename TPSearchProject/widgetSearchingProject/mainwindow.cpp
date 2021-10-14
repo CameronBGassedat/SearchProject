@@ -18,6 +18,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btnSearch_clicked()
 {
+    ui->btnSearch->setDisabled(true);
+
     int elapsedTime = executeFinder();
 
     //Affichage des résultats à l'utilisateur
@@ -26,10 +28,18 @@ void MainWindow::on_btnSearch_clicked()
 
 void MainWindow::on_btnCancel_clicked()
 {
+    ui->btnSearch->setEnabled(true);
+
+    clearFinder();
+
+}
+
+void MainWindow::clearFinder()
+{
     ui->startDirectory->setText("");
     ui->filters->setText("");
     ui->result->setText("");
-    finder.results().clear();
+    finder.cleanresults();
 }
 
 int MainWindow::executeFinder()

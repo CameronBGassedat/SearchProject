@@ -18,6 +18,7 @@ public:
     LibrarySearchingProject finder;
     MainWindow(QWidget *parent = nullptr);
     int executeFinder();
+    void clearFinder();
     void displayResults(int);
     ~MainWindow();
 
