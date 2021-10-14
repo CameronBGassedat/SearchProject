@@ -15,8 +15,12 @@ int LibrarySearchingProject::currentProgress() const {
     return _currentProgress;
 }
 
-QStringList LibrarySearchingProject::results() const {
+QStringList LibrarySearchingProject::results() {
     return m_results;
+}
+
+void LibrarySearchingProject::cleanresults() {
+    m_results.clear();
 }
 
 void LibrarySearchingProject::setFilters(const QString &filters) {

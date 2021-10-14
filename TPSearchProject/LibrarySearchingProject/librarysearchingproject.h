@@ -20,7 +20,8 @@ public:
     void        stop();
     int         maxProgress() const;
     int         currentProgress() const;
-    QStringList results() const;
+    QStringList results();
+    void        cleanresults();
     void        setFilters(const QString &filters);
     void        setStartDirectory(const QString &startDirectory);
     bool        isAvaiable() const;
