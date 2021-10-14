@@ -1,7 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "../LibrarySearchingProject/librarysearchingproject.h"
 #include <QMainWindow>
+#include <QDebug>
+#include<QElapsedTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -12,8 +15,13 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    LibrarySearchingProject finder;
     MainWindow(QWidget *parent = nullptr);
+    void displayResults();
     ~MainWindow();
+
+private slots:
+    void on_btnSearch_clicked();
 
 private:
     Ui::MainWindow *ui;
