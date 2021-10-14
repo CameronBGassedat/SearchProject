@@ -18,6 +18,22 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btnSearch_clicked()
 {
+    int elapsedTime = executeFinder();
+
+    //Affichage des résultats à l'utilisateur
+    displayResults(elapsedTime);
+}
+
+void MainWindow::on_btnCancel_clicked()
+{
+    ui->startDirectory->setText("");
+    ui->filters->setText("");
+    ui->result->setText("");
+    finder.results().clear();
+}
+
+int MainWindow::executeFinder()
+{
     QString directoryFinder = ui->startDirectory->text();
     QString s_filters = ui->filters->text();
 
@@ -32,23 +48,14 @@ void MainWindow::on_btnSearch_clicked()
     myTimer.start();
     finder.start();
     finder.stop();
-
-    //Affichage des résultats à l'utilisateur
-    displayResults();
+    return myTimer.elapsed();
 }
 
-void MainWindow::on_btnCancel_clicked()
-{
-    ui->startDirectory->setText("");
-    ui->filters->setText("");
-    ui->result->setText("");
-    finder.results().clear();
-}
-
-void MainWindow::displayResults()
+void MainWindow::displayResults(int elapsedTime)
 {
     QString s_display;
     s_display = "Nombre d'éléments trouvés : " + QString::number(finder.results().size()) + '\n';
+    s_display = s_display + "Temps écoulée : " + QString::number(elapsedTime) + " ms" + '\n';
 
     for (int i = 0; i < finder.results().size(); i++)
         s_display = s_display + finder.results()[i] + '\n';

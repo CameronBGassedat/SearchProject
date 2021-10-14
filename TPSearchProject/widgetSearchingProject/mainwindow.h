@@ -17,7 +17,8 @@ class MainWindow : public QMainWindow
 public:
     LibrarySearchingProject finder;
     MainWindow(QWidget *parent = nullptr);
-    void displayResults();
+    int executeFinder();
+    void displayResults(int);
     ~MainWindow();
 
 private slots:
