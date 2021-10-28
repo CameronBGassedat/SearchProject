@@ -11,18 +11,15 @@ class autotest : public QObject
 
 public:
     autotest();
-    ~autotest();
+    ~autotest() override;
 
 private slots:
     void initTestCase();
-    void cleanupTestCase();
-    void test_case1();
-
 };
 
 autotest::autotest()
 {
-
+    Lib.setMaxProgress(50);
 }
 
 autotest::~autotest()
@@ -33,16 +30,6 @@ autotest::~autotest()
 void autotest::initTestCase()
 {
     QCOMPARE(Lib.maxProgress(), 50);
-}
-
-void autotest::cleanupTestCase()
-{
-
-}
-
-void autotest::test_case1()
-{
-
 }
 
 QTEST_MAIN(autotest)

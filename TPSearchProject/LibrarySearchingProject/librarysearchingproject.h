@@ -1,9 +1,10 @@
 #ifndef LIBRARYSEARCHINGPROJECT_H
 #define LIBRARYSEARCHINGPROJECT_H
 
-#include "LibrarySearchingProject_global.h"
 #include <QString>
 #include <QStringList>
+
+#include "LibrarySearchingProject_global.h"
 
 class LIBRARYSEARCHINGPROJECT_EXPORT LibrarySearchingProject
 {
@@ -25,7 +26,7 @@ public:
     void        setFilters(const QString &filters);
     void        setStartDirectory(const QString &startDirectory);
     bool        isAvaiable() const;
-
+    void        setMaxProgress(int value);
 };
 
 #endif // LIBRARYSEARCHINGPROJECT_H

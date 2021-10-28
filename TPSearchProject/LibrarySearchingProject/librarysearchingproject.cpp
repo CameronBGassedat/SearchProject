@@ -11,6 +11,10 @@ int LibrarySearchingProject::maxProgress() const {
     return _maxProgress;
 }
 
+void LibrarySearchingProject::setMaxProgress(int value) {
+   _maxProgress = value;
+}
+
 int LibrarySearchingProject::currentProgress() const {
     return _currentProgress;
 }
@@ -40,7 +44,6 @@ void LibrarySearchingProject::start() {
 
     QDirIterator it(m_startDirectory, m_filters.split(","), QDir::Files, QDirIterator::Subdirectories);
     while (it.hasNext()) {
-        // qDebug() << it.next();
         m_results << it.next();
         _currentProgress++;
     }
