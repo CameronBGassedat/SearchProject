@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.15.0, 2021-10-14T13:46:41. -->
+<!-- Written by QtCreator 4.15.0, 2021-10-28T12:27:21. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -68,10 +68,10 @@
     <value type="bool" key="AutoTest.Framework.QtTest">true</value>
    </valuemap>
    <valuemap type="QVariantMap" key="AutoTest.CheckStates">
-    <value type="Qt::CheckState" key="1@C:/Users/alexi/Documents/Projets Qt/TPSearchingProject/AutoTestSearchingProject/tst_autotest.cpp:autotest">Checked</value>
-    <value type="Qt::CheckState" key="1@C:/Users/alexi/Documents/Projets Qt/TPSearchingProject/AutoTestSearchingProject/tst_autotest.cpp:cleanupTestCase">Unchecked</value>
-    <value type="Qt::CheckState" key="1@C:/Users/alexi/Documents/Projets Qt/TPSearchingProject/AutoTestSearchingProject/tst_autotest.cpp:initTestCase">Unchecked</value>
-    <value type="Qt::CheckState" key="1@C:/Users/alexi/Documents/Projets Qt/TPSearchingProject/AutoTestSearchingProject/tst_autotest.cpp:test_case1">Checked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/alexi/Documents/Projets Qt/SearchProject/TPSearchProject/AutoTestSearchingProject/tst_autotest.cpp:autotest">Checked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/alexi/Documents/Projets Qt/SearchProject/TPSearchProject/AutoTestSearchingProject/tst_autotest.cpp:cleanupTestCase">Unchecked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/alexi/Documents/Projets Qt/SearchProject/TPSearchProject/AutoTestSearchingProject/tst_autotest.cpp:initTestCase">Unchecked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/alexi/Documents/Projets Qt/SearchProject/TPSearchProject/AutoTestSearchingProject/tst_autotest.cpp:test_case1">Checked</value>
    </valuemap>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>
@@ -299,14 +299,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/alexi/Documents/Projets Qt/TPSearchingProject/widgetSearchingProject/widgetSearchingProject.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/alexi/Documents/Projets Qt/TPSearchingProject/widgetSearchingProject/widgetSearchingProject.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">AutoTestSearchingProject2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/alexi/Documents/Projets Qt/SearchProject/TPSearchProject/AutoTestSearchingProject/AutoTestSearchingProject.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/alexi/Documents/Projets Qt/SearchProject/TPSearchProject/AutoTestSearchingProject/AutoTestSearchingProject.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/alexi/Documents/Projets Qt/build-TPSearchingProject-Desktop_Qt_5_12_11_MinGW_64_bit-Debug/widgetSearchingProject</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/alexi/Documents/Projets Qt/build-TPSearchingProject-Desktop_Qt_5_12_11_MinGW_64_bit-Debug/AutoTestSearchingProject</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -372,14 +373,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/alexi/Documents/Projets Qt/TPSearchingProject/AutoTestSearchingProject/AutoTestSearchingProject.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/alexi/Documents/Projets Qt/TPSearchingProject/AutoTestSearchingProject/AutoTestSearchingProject.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">widgetSearchingProject2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/alexi/Documents/Projets Qt/SearchProject/TPSearchProject/widgetSearchingProject/widgetSearchingProject.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/alexi/Documents/Projets Qt/SearchProject/TPSearchProject/widgetSearchingProject/widgetSearchingProject.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/alexi/Documents/Projets Qt/build-TPSearchingProject-Desktop_Qt_5_12_11_MinGW_64_bit-Debug/AutoTestSearchingProject</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/alexi/Documents/Projets Qt/build-TPSearchingProject-Desktop_Qt_5_12_11_MinGW_64_bit-Debug/widgetSearchingProject</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">2</value>
   </valuemap>

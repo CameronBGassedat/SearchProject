@@ -1,11 +1,13 @@
 #include <QtTest>
 #include <QCoreApplication>
+#include "../LibrarySearchingProject/librarysearchingproject.h"
 
 // add necessary includes here
 
 class autotest : public QObject
 {
     Q_OBJECT
+    LibrarySearchingProject Lib;
 
 public:
     autotest();
@@ -30,7 +32,7 @@ autotest::~autotest()
 
 void autotest::initTestCase()
 {
-
+    QCOMPARE(Lib.maxProgress(), 50);
 }
 
 void autotest::cleanupTestCase()
