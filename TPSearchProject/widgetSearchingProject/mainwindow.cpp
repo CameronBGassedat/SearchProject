@@ -2,7 +2,6 @@
 #include "ui_mainwindow.h"
 
 #include <QDirIterator>
-#include <QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -45,13 +44,13 @@ void MainWindow::clearFinder()
 
 int MainWindow::executeFinder()
 {
-    s_directoryFinder = ui->startDirectory->text();
+    QString directoryFinder = ui->startDirectory->text();
     QString s_filters = ui->filters->text();
 
-    s_directoryFinder.replace("\'","/'");
+    directoryFinder.replace("\'","/'");
 
 
-    finder.setStartDirectory(s_directoryFinder);
+    finder.setStartDirectory(directoryFinder);
     finder.setFilters(s_filters);
 
     //Démarrage du timer
@@ -75,17 +74,4 @@ void MainWindow::displayResults(int elapsedTime)
 }
 
 
-
-
-void MainWindow::on_btnBrowse_clicked()
-{
-    //à retirer de la méthode bouton !
-
-     s_directoryFinder = QFileDialog::getExistingDirectory(this, tr("Open Directory"),
-        "/home",
-        QFileDialog::ShowDirsOnly
-        | QFileDialog::DontResolveSymlinks);
-
-     ui->startDirectory->setText(s_directoryFinder);
-}
 

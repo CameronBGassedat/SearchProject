@@ -27,10 +27,7 @@ private slots:
 
     void on_btnCancel_clicked();
 
-    void on_btnBrowse_clicked();
-
 private:
     Ui::MainWindow *ui;
-    QString s_directoryFinder;
 };
 #endif // MAINWINDOW_H
