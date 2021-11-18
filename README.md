@@ -1,2 +1,1 @@
-# SearchProject
-Searching Files with filters within directories
+This is a tool aimed to search file file over the filesystem thanks to QT threads
